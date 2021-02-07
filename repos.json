@@ -95,7 +95,7 @@
     },
     "MDS_Winery_Dashboard": {
         "description": "MDS-Winery Dashboard for American wines",
-        "homepage": "https://mds-winery-2020.herokuapp.com/",
+        "homepage": "https://winery-mds-2021.herokuapp.com/",
         "image_url": "https://raw.githubusercontent.com/UBC-MDS/MDS_Winery_Dashboard/main/App_design.JPG",
         "topics": [
             "dashboard",
@@ -145,7 +145,7 @@
     "career_deciscion_aid-r": {
         "description": null,
         "homepage": null,
-        "image_url": "https://raw.githubusercontent.com/UBC-MDS/career_deciscion_aid-r/master/figures/dashboard_proposal.png",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/career_deciscion_aid-r/master/figures/dashboard_final_version.png",
         "topics": []
     },
     "happy-dash": {
@@ -161,7 +161,7 @@
     "532-group11": {
         "description": "Movie Production Planning Dashboard",
         "homepage": "https://moveymoney.herokuapp.com/",
-        "image_url": "https://raw.githubusercontent.com/UBC-MDS/532-group11/main/img/app_sketch.png",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/532-group11/main/img/AppSketch_final.png",
         "topics": [
             "lineplot",
             "loess-smoothers",
@@ -247,11 +247,9 @@
             "table",
             "dropdown",
             "histogram",
-            "selection-sort",
             "tabs",
             "altair-8800",
             "dashboard",
-            "choropleth-map",
             "scatterplot",
             "slider"
         ]
@@ -338,7 +336,7 @@
     },
     "dsci_532_group23": {
         "description": "An app about showing world energy consumption to appeal to the public to save energy",
-        "homepage": "",
+        "homepage": "https://world-energy-consumption-app.herokuapp.com",
         "image_url": "https://raw.githubusercontent.com/UBC-MDS/dsci_532_group23/main/doc/world_energy_consumption_sketch.png",
         "topics": [
             "map",
@@ -368,10 +366,17 @@
         ]
     },
     "mds532_viz_group25": {
-        "description": null,
-        "homepage": null,
-        "image_url": "https://raw.githubusercontent.com/UBC-MDS/mds532_viz_group25/main/dash_hist.png",
-        "topics": []
+        "description": "U.S city violent crime visualization",
+        "homepage": "https://mds-crimeviz.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/mds532_viz_group25/main/demo.gif",
+        "topics": [
+            "map",
+            "rangeslider",
+            "dropdown",
+            "lineplot",
+            "barplot",
+            "tooltips"
+        ]
     },
     "DSCI_532_group26": {
         "description": "An app to report survey on mental health in the tech workplace.  ",
