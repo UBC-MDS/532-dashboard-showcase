@@ -73,7 +73,7 @@
     "dash_of_spice-R": {
         "description": "The Happy Navvy dashboard aims to provide an easy-to-use application to individuals and families looking to immigrate to a new country that best aligns with their values. The dashboard utilizes a user's key preferences to suggest countries that would provide maximum happiness if they immigrated there.",
         "homepage": "https://happy-navvy-r.herokuapp.com/",
-        "image_url": "https://raw.githubusercontent.com/UBC-MDS/dash_of_spice-R/main/assets/Screen-Recording-2021-01-30-at-8.gif",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/dash_of_spice-R/main/gifception.gif",
         "topics": [
             "map",
             "dropdown",
@@ -300,7 +300,7 @@
     "532_Group_22": {
         "description": "The Criminality in Canada: Fighting Anecdotes with Data app allows users to explore Canadian crime data and trends by location. ",
         "homepage": "https://canadian-crime.herokuapp.com/",
-        "image_url": "https://raw.githubusercontent.com/UBC-MDS/532_Group_22/main/doc/images/design_mockup_tab_1.png",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/532_Group_22/main/canadian_crime_app.gif",
         "topics": [
             "leaflet",
             "choropleth",
