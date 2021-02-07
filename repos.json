@@ -87,7 +87,7 @@
     "MDS_Winery_Dashboard": {
         "description": "MDS-Winery Dashboard for American wines",
         "homepage": "https://winery-mds-2021.herokuapp.com/",
-        "image_url": "https://raw.githubusercontent.com/UBC-MDS/MDS_Winery_Dashboard/main/App_design.JPG",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/MDS_Winery_Dashboard/main/107161687-3528cb00-6953-11eb-8a4d-32c3b9531971.gif",
         "topics": [
             "plotly",
             "dropdown",
