@@ -33,6 +33,16 @@ app.layout = dbc.Container([
         dbc.Row([
             dbc.Col([
                 dbc.Jumbotron([
+                    html.P(
+                        html.A('FiveThreeTwo', href='https://fivethirtyeight.com/', style={'color': 'white', 'text-decoration': 'none'}),
+                        style={
+                            'text-align': 'center',
+                            'color': 'white',
+                            'font-family': 'Ubuntu Mono',
+                            'margin-bottom': '-15px',
+                            'margin-top': '-15px',
+                            'padding-top': '0px',
+                            'font-size': '34px'}),
                     html.H1(
                         title,
                         className='display-2',
