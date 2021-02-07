@@ -224,7 +224,7 @@
     "DSCI532_Group17": {
         "description": "A dashboard that provides interesting statistics on FIFA-19 soccer players worldwide. ",
         "homepage": "https://fifa19dashboard-0.herokuapp.com/",
-        "image_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI532_Group17/main/img/demo.gif",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI532_Group17/main/img/DEMO.gif",
         "topics": [
             "fifa19",
             "worldmap",
