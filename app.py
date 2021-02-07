@@ -27,6 +27,7 @@ title = 'Dashboard Showcase'
 app = dash.Dash(
     __name__, title=title,
     external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 app.layout = dbc.Container([
         dbc.Row([
@@ -128,4 +129,4 @@ def update_thumbnails(selected_topics):
             dropdown_options]
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server()
