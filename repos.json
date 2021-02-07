@@ -5,8 +5,6 @@
         "image_url": "https://raw.githubusercontent.com/UBC-MDS/obesity-explorer-R/main/doc/img/dashboard.gif",
         "topics": [
             "vizualisation",
-            "dashboard",
-            "dash",
             "obesity",
             "scatterplot",
             "barplot",
@@ -26,14 +24,9 @@
             "makeup",
             "foundations",
             "cosmetics",
-            "dashboard",
-            "dash",
             "python",
             "plotly",
             "webapp",
-            "data-science",
-            "data-visualization",
-            "data-analysis",
             "dropdown",
             "radiobutton",
             "slider",
@@ -52,7 +45,7 @@
             "select",
             "dropdown",
             "hover",
-            "linechart",
+            "lineplot",
             "daterangepicker",
             "radiobutton"
         ]
@@ -62,8 +55,6 @@
         "homepage": "https://life-expectancy-indicator-app.herokuapp.com/",
         "image_url": "https://raw.githubusercontent.com/UBC-MDS/dsci_532_group_04_R/main/figures/app.gif",
         "topics": [
-            "dashboard",
-            "dash",
             "dashboard-widget",
             "ggplotly",
             "ggplot2",
@@ -98,9 +89,7 @@
         "homepage": "https://winery-mds-2021.herokuapp.com/",
         "image_url": "https://raw.githubusercontent.com/UBC-MDS/MDS_Winery_Dashboard/main/App_design.JPG",
         "topics": [
-            "dashboard",
             "plotly",
-            "dash",
             "dropdown",
             "slider",
             "widget",
@@ -134,7 +123,6 @@
         "image_url": "https://raw.githubusercontent.com/UBC-MDS/dsci-532_group08/main/img/dashboard_icon.png",
         "topics": [
             "mental-health",
-            "data-science",
             "ubc",
             "mds",
             "tech",
@@ -181,9 +169,7 @@
             "time-series",
             "covid-19",
             "johns-hopkins-csse",
-            "plotly-dash",
             "python",
-            "data-science",
             "map",
             "dropdown",
             "barplot",
@@ -199,10 +185,9 @@
     "532_Dashboard_Project_Group_14": {
         "description": "This app allows users to explore key factors for employee attrition. Survey data can be filtered by gender, age, and department.",
         "homepage": "https://employee-attrition-dashboard.herokuapp.com/",
-        "image_url": "https://raw.githubusercontent.com/UBC-MDS/532_Dashboard_Project_Group_14/main/img/app_sketch.png",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/532_Dashboard_Project_Group_14/main/img/dashboard_demo.gif",
         "topics": [
             "python",
-            "dashboard",
             "employee-attrition",
             "barplot",
             "slider",
@@ -227,7 +212,6 @@
         "homepage": "https://it-mental-health-dash-r.herokuapp.com/",
         "image_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI532-Group16-R/main/images/app_sketch_v1.png",
         "topics": [
-            "dash",
             "r",
             "plotly",
             "tidyverse",
@@ -238,8 +222,8 @@
         ]
     },
     "DSCI532_Group17": {
-        "description": "The application is a dashboard allowing users to track interesting features about soccer players. The table in the middle shows the top players, ordered by the feature the user selected using the dropdown menu at the top of the page. On the right side, there is a histogram showing the aggregated information of the soccer players, by nationality or by club. You can also click the Map button to check a world map to have an idea about each country s performance on soccer.",
-        "homepage": "https://dsci532group17fifa2019.herokuapp.com/",
+        "description": "A dashboard that provides interesting statistics on FIFA-19 soccer players worldwide. ",
+        "homepage": "https://fifa19dashboard-0.herokuapp.com/",
         "image_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI532_Group17/main/img/demo.gif",
         "topics": [
             "fifa19",
@@ -249,7 +233,6 @@
             "histogram",
             "tabs",
             "altair-8800",
-            "dashboard",
             "scatterplot",
             "slider"
         ]
@@ -273,14 +256,12 @@
     "Mental-Health-in-Tech-Dashboard": {
         "description": "The Mental Health in Tech Dashboard visualizes a dataset consisting of survey questions and responses about various aspects of the mental health of tech workers. ",
         "homepage": "https://mentalhealth-in-tech.herokuapp.com/",
-        "image_url": "https://raw.githubusercontent.com/UBC-MDS/Mental-Health-in-Tech-Dashboard/main/static/img/wireframe1.png",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/Mental-Health-in-Tech-Dashboard/main/src/assets/img/ezgif.com-gif-maker.gif",
         "topics": [
             "mental-health",
             "hr",
             "tec",
-            "dashboard",
-            "plotly-python",
-            "plotly-dash",
+            "plotly",
             "altair",
             "barplot",
             "donut-chart",
@@ -311,7 +292,7 @@
             "slider",
             "dropdown",
             "barplot",
-            "linechart",
+            "lineplot",
             "hover",
             "gapminder"
         ]
@@ -335,7 +316,7 @@
         ]
     },
     "dsci_532_group23": {
-        "description": "An app about showing world energy consumption to appeal to the public to save energy",
+        "description": "An app that shows world energy consumption and appeals to the public to save energy.",
         "homepage": "https://world-energy-consumption-app.herokuapp.com",
         "image_url": "https://raw.githubusercontent.com/UBC-MDS/dsci_532_group23/main/doc/world_energy_consumption_sketch.png",
         "topics": [
@@ -343,7 +324,6 @@
             "lineplot",
             "barplot",
             "plotly",
-            "dash",
             "python",
             "slider",
             "dropdown"
@@ -355,9 +335,8 @@
         "image_url": "https://raw.githubusercontent.com/UBC-MDS/dsci_532_group_24/main/app-final-snapshot.gif",
         "topics": [
             "map",
-            "linechart",
+            "lineplot",
             "barchart",
-            "dashboard",
             "select",
             "hover",
             "slider",
@@ -381,12 +360,10 @@
     "DSCI_532_group26": {
         "description": "An app to report survey on mental health in the tech workplace.  ",
         "homepage": "https://mental-health-dashboard-ubc.herokuapp.com/",
-        "image_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI_532_group26/main/tab_1.jpg",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI_532_group26/main/imgs/tab_1.jpg",
         "topics": [
             "python",
-            "data-visualization",
             "barplot",
-            "dash",
             "heroku",
             "dropdown",
             "select"
