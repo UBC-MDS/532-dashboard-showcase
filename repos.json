@@ -120,7 +120,7 @@
     "dsci-532_group08": {
         "description": "Welcome to the mental health in tech dashboard. This dashboard is created to help identify main factors that associate with mental health conditions, and help the government and organizations understand why supporting mental health is essential.",
         "homepage": "https://dsci532-viz-g8.herokuapp.com/",
-        "image_url": "https://raw.githubusercontent.com/UBC-MDS/dsci-532_group08/main/img/dashboard_icon.png",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/dsci-532_group08/main/img/dashboard-demo.gif",
         "topics": [
             "mental-health",
             "ubc",
