@@ -1,0 +1,390 @@
+{
+    "obesity-explorer-R": {
+        "description": "The Obesity Explorer Dashboard (a UBC-MDS Project by Group #1)",
+        "homepage": "https://obesity-explorer-r.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/obesity-explorer-R/main/doc/img/dashboard.gif",
+        "topics": [
+            "vizualisation",
+            "dashboard",
+            "dash",
+            "obesity",
+            "scatterplot",
+            "barplot",
+            "trendline",
+            "map",
+            "trends",
+            "association",
+            "r",
+            "heroku"
+        ]
+    },
+    "dsci-532_group_02": {
+        "description": "Foundation Shades Across the Globe App. Cosmetics data visualization dashboard built with Dash for studying the best selling brands across US, Japan, Indian, and Nigeria.",
+        "homepage": "https://foundation-product-dashboard.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/dsci-532_group_02/main/data/gif_tutorials/filter_by_country.gif",
+        "topics": [
+            "makeup",
+            "foundations",
+            "cosmetics",
+            "dashboard",
+            "dash",
+            "python",
+            "plotly",
+            "webapp",
+            "data-science",
+            "data-visualization",
+            "data-analysis",
+            "dropdown",
+            "radiobutton",
+            "slider",
+            "barchart",
+            "select",
+            "hover"
+        ]
+    },
+    "dsci532-group3-R": {
+        "description": "DSCI532 Data Visualization 2, Group 3, R version. COVID-19 Visualization",
+        "homepage": "https://covid-19-mds-532-group3-final.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/dsci532-group3-R/master/images/FinalappR.png",
+        "topics": [
+            "covid19",
+            "map",
+            "select",
+            "dropdown",
+            "hover",
+            "linechart",
+            "daterangepicker",
+            "radiobutton"
+        ]
+    },
+    "dsci_532_group_04_R": {
+        "description": "The Life Expectancy Indicator Dashboard visualizes a dataset consisting of survey questions and responses about various aspects of life expectancy for countries all over the world.",
+        "homepage": "https://life-expectancy-indicator-app.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/dsci_532_group_04_R/main/figures/app.gif",
+        "topics": [
+            "dashboard",
+            "dash",
+            "dashboard-widget",
+            "ggplotly",
+            "ggplot2",
+            "health",
+            "life-expectancy",
+            "globaldatabase",
+            "dropdown",
+            "radiobutton",
+            "slider",
+            "map",
+            "linegraph",
+            "scatterplot",
+            "hover"
+        ]
+    },
+    "dash_of_spice-R": {
+        "description": "The Happy Navvy dashboard aims to provide an easy-to-use application to individuals and families looking to immigrate to a new country that best aligns with their values. The dashboard utilizes a user's key preferences to suggest countries that would provide maximum happiness if they immigrated there.",
+        "homepage": "https://happy-navvy-r.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/dash_of_spice-R/main/assets/Screen-Recording-2021-01-30-at-8.gif",
+        "topics": [
+            "map",
+            "dropdown",
+            "yearly-trends",
+            "barplot",
+            "table",
+            "select",
+            "slider"
+        ]
+    },
+    "MDS_Winery_Dashboard": {
+        "description": "MDS-Winery Dashboard for American wines",
+        "homepage": "https://mds-winery-2020.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/MDS_Winery_Dashboard/main/App_design.JPG",
+        "topics": [
+            "dashboard",
+            "plotly",
+            "dash",
+            "dropdown",
+            "slider",
+            "widget",
+            "map",
+            "barplot"
+        ]
+    },
+    "Movie_Selection": {
+        "description": "An app to select movies for streaming services",
+        "homepage": "https://movie-selection-app.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/Movie_Selection/main/docs/images/app_demo.gif",
+        "topics": [
+            "select",
+            "range-slider",
+            "dropdown",
+            "scatterplot",
+            "boxplots",
+            "hover",
+            "summary-indicator",
+            "studios",
+            "movies",
+            "box-office",
+            "voting",
+            "genres",
+            "slider"
+        ]
+    },
+    "dsci-532_group08": {
+        "description": "Welcome to the mental health in tech dashboard. This dashboard is created to help identify main factors that associate with mental health conditions, and help the government and organizations understand why supporting mental health is essential.",
+        "homepage": "https://dsci532-viz-g8.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/dsci-532_group08/main/img/dashboard_icon.png",
+        "topics": [
+            "mental-health",
+            "data-science",
+            "ubc",
+            "mds",
+            "tech",
+            "dsci532",
+            "wellness"
+        ]
+    },
+    "career_deciscion_aid-r": {
+        "description": null,
+        "homepage": null,
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/career_deciscion_aid-r/master/figures/dashboard_proposal.png",
+        "topics": []
+    },
+    "happy-dash": {
+        "description": "An interactive exploration of the World Happiness Report",
+        "homepage": "https://happydash.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/happy-dash/main/visuals/happy_dash_demo.gif",
+        "topics": [
+            "choropleth",
+            "loading",
+            "bootstrap"
+        ]
+    },
+    "532-group11": {
+        "description": "Movie Production Planning Dashboard",
+        "homepage": "https://moveymoney.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/532-group11/main/img/app_sketch.png",
+        "topics": [
+            "lineplot",
+            "loess-smoothers",
+            "datatables",
+            "heatmap",
+            "dropdown",
+            "modal",
+            "range-slider",
+            "slider"
+        ]
+    },
+    "DSCI_532_Group_12": {
+        "description": "This repository is used for creating a dashboard visualizing Covid-19 statistics at both global and country scales. The dashboard is implemented using Python and Dash library. The data set is from COVID-19 Data Repository provided by Johns Hopkins University.",
+        "homepage": "https://covid-data-portal.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI_532_Group_12/main/docs/images/dash-demo.gif",
+        "topics": [
+            "time-series",
+            "covid-19",
+            "johns-hopkins-csse",
+            "plotly-dash",
+            "python",
+            "data-science",
+            "map",
+            "dropdown",
+            "barplot",
+            "lineplot"
+        ]
+    },
+    "DSCI_532_Group13_Crime": {
+        "description": "A Crime Statistics dashboard to visualise the trend of crime rates in America ",
+        "homepage": "",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI_532_Group13_Crime/main/img/Graph_Sketch.png",
+        "topics": []
+    },
+    "532_Dashboard_Project_Group_14": {
+        "description": "This app allows users to explore key factors for employee attrition. Survey data can be filtered by gender, age, and department.",
+        "homepage": "https://employee-attrition-dashboard.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/532_Dashboard_Project_Group_14/main/img/app_sketch.png",
+        "topics": [
+            "python",
+            "dashboard",
+            "employee-attrition",
+            "barplot",
+            "slider",
+            "dropdown"
+        ]
+    },
+    "DSCI_532_Group15_wine": {
+        "description": "A dashboard to help you find the wine reviews",
+        "homepage": "https://winevalley.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI_532_Group15_wine/main/image/app_demo_milestone_2.gif",
+        "topics": [
+            "scatterplot",
+            "map",
+            "barchart",
+            "table",
+            "dropdown",
+            "slider"
+        ]
+    },
+    "DSCI532-Group16-R": {
+        "description": "Mental Health Awareness Dashboard using survey data from a 2014 survey that measures attitudes towards mental health and frequency of mental health disorders in the workplace.",
+        "homepage": "https://it-mental-health-dash-r.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI532-Group16-R/main/images/app_sketch_v1.png",
+        "topics": [
+            "dash",
+            "r",
+            "plotly",
+            "tidyverse",
+            "mental-health-awareness",
+            "map",
+            "hover",
+            "barplot"
+        ]
+    },
+    "DSCI532_Group17": {
+        "description": "The application is a dashboard allowing users to track interesting features about soccer players. The table in the middle shows the top players, ordered by the feature the user selected using the dropdown menu at the top of the page. On the right side, there is a histogram showing the aggregated information of the soccer players, by nationality or by club. You can also click the Map button to check a world map to have an idea about each country s performance on soccer.",
+        "homepage": "https://dsci532group17fifa2019.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI532_Group17/main/img/demo.gif",
+        "topics": [
+            "fifa19",
+            "worldmap",
+            "table",
+            "dropdown",
+            "histogram",
+            "selection-sort",
+            "tabs",
+            "altair-8800",
+            "dashboard",
+            "choropleth-map",
+            "scatterplot",
+            "slider"
+        ]
+    },
+    "DSCI_532_Group18_Allstars": {
+        "description": "Country Happiness Visualization App",
+        "homepage": "https://immigration-dash-app.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI_532_Group18_Allstars/main/images/happiness_app.gif",
+        "topics": [
+            "happiness",
+            "immigration",
+            "map",
+            "hover",
+            "barplot",
+            "connected-charts",
+            "datatable",
+            "country",
+            "world"
+        ]
+    },
+    "Mental-Health-in-Tech-Dashboard": {
+        "description": "The Mental Health in Tech Dashboard visualizes a dataset consisting of survey questions and responses about various aspects of the mental health of tech workers. ",
+        "homepage": "https://mentalhealth-in-tech.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/Mental-Health-in-Tech-Dashboard/main/static/img/wireframe1.png",
+        "topics": [
+            "mental-health",
+            "hr",
+            "tec",
+            "dashboard",
+            "plotly-python",
+            "plotly-dash",
+            "altair",
+            "barplot",
+            "donut-chart",
+            "dropdown",
+            "slider"
+        ]
+    },
+    "dsci-532_group-20": {
+        "description": "An app to visualize the key performance metrics of Super-Hotels in Portugal from 2015 to 2017",
+        "homepage": "https://super-hotels.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/dsci-532_group-20/main/results/img/hotel.png",
+        "topics": [
+            "select",
+            "dropdown",
+            "lineplot",
+            "radiobutton",
+            "hover-effects",
+            "bargraphs",
+            "summary-statistics"
+        ]
+    },
+    "532-Group21": {
+        "description": "The app has a single main page with three visualizations that depend on the filters selected. Most importantly, the top left contains a filter which selects the statistic of interest and this is the main filter on which all of the visuals are built and includes life expectancy, child mortality, education ratio, population density and CO2 emissions.",
+        "homepage": "https://dsci532-gapexpresser.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/532-Group21/main/imgs/AppSketch.png",
+        "topics": [
+            "map",
+            "slider",
+            "dropdown",
+            "barplot",
+            "linechart",
+            "hover",
+            "gapminder"
+        ]
+    },
+    "532_Group_22": {
+        "description": "The Criminality in Canada: Fighting Anecdotes with Data app allows users to explore Canadian crime data and trends by location. ",
+        "homepage": "https://canadian-crime.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/532_Group_22/main/doc/images/design_mockup_tab_1.png",
+        "topics": [
+            "leaflet",
+            "choropleth",
+            "barplot",
+            "time-series",
+            "crime-statistics",
+            "slider",
+            "dropdown",
+            "tabs",
+            "multiselect-dropdown",
+            "python",
+            "map"
+        ]
+    },
+    "dsci_532_group23": {
+        "description": "An app about showing world energy consumption to appeal to the public to save energy",
+        "homepage": "",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/dsci_532_group23/main/doc/world_energy_consumption_sketch.png",
+        "topics": [
+            "map",
+            "lineplot",
+            "barplot",
+            "plotly",
+            "dash",
+            "python",
+            "slider",
+            "dropdown"
+        ]
+    },
+    "dsci_532_group_24": {
+        "description": "A dashboard for children diseases and mortality in Africa, 1990 - 2015",
+        "homepage": "https://african-children-health-app.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/dsci_532_group_24/main/app-final-snapshot.gif",
+        "topics": [
+            "map",
+            "linechart",
+            "barchart",
+            "dashboard",
+            "select",
+            "hover",
+            "slider",
+            "dropdown",
+            "heroku-deployment"
+        ]
+    },
+    "mds532_viz_group25": {
+        "description": null,
+        "homepage": null,
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/mds532_viz_group25/main/dash_hist.png",
+        "topics": []
+    },
+    "DSCI_532_group26": {
+        "description": "An app to report survey on mental health in the tech workplace.  ",
+        "homepage": "https://mental-health-dashboard-ubc.herokuapp.com/",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI_532_group26/main/tab_1.jpg",
+        "topics": [
+            "python",
+            "data-visualization",
+            "barplot",
+            "dash",
+            "heroku",
+            "dropdown",
+            "select"
+        ]
+    }
+}
