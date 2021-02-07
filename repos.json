@@ -318,7 +318,7 @@
     "dsci_532_group23": {
         "description": "An app that shows world energy consumption and appeals to the public to save energy.",
         "homepage": "https://world-energy-consumption-app.herokuapp.com",
-        "image_url": "https://raw.githubusercontent.com/UBC-MDS/dsci_532_group23/main/doc/world_energy_consumption_sketch.png",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/dsci_532_group23/main/world_energy_consumption_demo.gif",
         "topics": [
             "map",
             "lineplot",
