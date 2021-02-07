@@ -61,8 +61,15 @@ app.layout = dbc.Container([
             justify='center'),
         html.Br(),
         dbc.Row(id='thumbnails-row'),
-        html.Hr(),
-        html.P('Source link')],
+        html.Br(),
+        html.Hr(style={'width': '50%', 'margin-left': '0px'}),
+        html.P(['''
+        This dashboard shows off the impressive dasboards created by students during a 4-week course in Dash for MDS DSCI-532 at UBC.
+        The displayed dashboards are filtered by the intersection (AND) of the selected tags.
+        The count for each tag is updated when filtering to reflect only the visible dashboards.
+        This dash board looks best in a full width window and ''',
+        html.A('the source can be found on GitHub.', href='https://github.com/UBC-MDS/532-dashboard-showcase')],
+        style={'font-size': '14px', 'width': '50%'})],
     style={'max-width': '95%'})
 
 @app.callback(
@@ -79,7 +86,7 @@ def update_thumbnails(selected_topics):
         # Return all repos if no topics are selected
         matched_repo_names = list(repos.keys())
         
-    # Update dropdown dynamically for only the visible dashboards
+    # Update dropdown dynamically to count tags in the visible dashboards only
     flat_topic_list = [i for repo in repos for i in repos[repo]['topics'] if repo in matched_repo_names]
     topics_with_counts = dict(sorted(Counter(flat_topic_list).items(), key=lambda item: item[1], reverse=True))
     dropdown_options = [
