@@ -1,2 +1,3 @@
-# 532-dashboard-showcase
-To make it easier for students to check out their peers work from 532.
+# Dashboard showcase
+
+To make it easier for students to check out their peer's dashing Dash dashboards from 532.
