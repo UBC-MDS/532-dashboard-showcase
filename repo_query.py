@@ -112,6 +112,24 @@ def clean_topics(topics):
         topics[topics.index('scatter-plot')] = 'scatterplot'
     if 'line-chart' in topics:
         topics[topics.index('line-chart')] = 'lineplot'
+    if 'linechart' in topics:
+        topics[topics.index('linechart')] = 'lineplot'
+    if 'plotly-python' in topics:
+        topics[topics.index('plotly-python')] = 'plotly'
+    if 'dash' in topics:
+        topics.remove('dash')
+    if 'plotly-dash' in topics:
+        topics.remove('plotly-dash')
+    if 'plotly-dash' in topics:
+        topics.remove('plotly-dash')
+    if 'dashboard' in topics:
+        topics.remove('dashboard')
+    if 'data-science' in topics:
+        topics.remove('data-science')
+    if 'data-visualization' in topics:
+        topics.remove('data-visualization')
+    if 'data-analysis' in topics:
+        topics.remove('data-analysis')
     return topics 
 
 if __name__ == '__main__':
