@@ -15,7 +15,6 @@ with open('repos.json', 'r') as f:
     data=f.read()
 repos = json.loads(data)
 # The icon is grabbed for this group by default
-repos['dsci-532_group08']['image_url'] = 'https://raw.githubusercontent.com/UBC-MDS/dsci-532_group08/main/img/dashboard_screenshot2.png'
 
 flat_topic_list = [i for repo in repos for i in repos[repo]['topics']]
 topics_with_counts = dict(sorted(Counter(flat_topic_list).items(), key=lambda item: item[1], reverse=True))
