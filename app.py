@@ -49,9 +49,9 @@ app.layout = dbc.Container([
                         style={'text-align': 'center', 'color': 'white'}),
                     html.Hr(className="my-2", style={'background-color': 'white', 'width': '700px'}),
                     html.P(
-                        "Click a dashboard to view it on heroku. Use the dropdown to filter tags.",
+                        "Hover over a thumbnail to read more. Click it to try out the deployed app.",
                         className="lead",
-                        style={'text-align': 'center', 'color': 'white'}),
+                        style={'text-align': 'center', 'color': 'white', 'font-family': 'Ubuntu'}),
                 ],
                     style={'background-color': '#0d1d41',
                         'font-family': 'Ubuntu',
@@ -62,7 +62,7 @@ app.layout = dbc.Container([
         dbc.Row([
             dbc.Col([
                 dcc.Dropdown(id='topic-dropdown', multi=True, options=dropdown_options,
-                    placeholder='Click to select tags. The (number) is the count.',
+                    placeholder='Click here to select tags. The (#) is the count of dashboards.',
                     style={
                         'font-family': 'Ubuntu',
                         'border-width': '0px',
@@ -75,12 +75,12 @@ app.layout = dbc.Container([
         html.Br(),
         html.Hr(style={'width': '50%', 'margin-left': '0px'}),
         html.P(['''
-        This dashboard shows off the impressive dasboards created by students during a 4-week course in Dash for MDS DSCI-532 at UBC.
+        This app shows off the impressive dasboards created by students during a 4-week course in Dash for MDS DSCI-532 at UBC.
         The displayed dashboards are filtered by the intersection (AND) of the selected tags.
         The count for each tag is updated when filtering to reflect only the visible dashboards.
-        This dash board looks best in a full width window and ''',
+        This dashboard looks best in a full width window and ''',
         html.A('the source can be found on GitHub.', href='https://github.com/UBC-MDS/532-dashboard-showcase')],
-        style={'font-size': '14px', 'width': '50%'})],
+        style={'font-size': '14px', 'width': '50%', 'font-family': 'Ubuntu'})],
     style={'max-width': '95%'})
 
 @app.callback(
@@ -114,8 +114,8 @@ def update_thumbnails(selected_topics):
                     className='image'),
                 html.Div(
                     html.Div([
-                        html.H3(repo),
-                        html.P(repos[repo]['description'], style={'font-size': '15px'})],
+                        html.H3(repo, style={'font-family': 'Ubuntu'}),
+                        html.P(repos[repo]['description'], style={'font-size': '15px', 'font-family': 'Ubuntu'})],
                         className='text'),
                     className='overlay')],
                 className='container-hover'),
@@ -126,10 +126,8 @@ def update_thumbnails(selected_topics):
     random.shuffle(images)
     # Layout images in three columns
     if len(images) == 1:
-        print(1)
         return [[dbc.Col(images[0]), dbc.Col([]), dbc.Col([])], dropdown_options]
     if len(images) == 2:
-        print(2)
         return [[dbc.Col(images[0]), dbc.Col(images[1]), dbc.Col([])], dropdown_options] 
     first_col_len = -(-len(images) // 3)  # Ceiling division
     second_col_len = (len(images) - first_col_len) // 2
