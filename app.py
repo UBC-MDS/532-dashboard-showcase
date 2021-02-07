@@ -119,7 +119,7 @@ def update_thumbnails(selected_topics):
                         className='text'),
                     className='overlay')],
                 className='container-hover'),
-            href=repos[repo]['homepage'])
+            href=repos[repo]['homepage'], target="_blank", rel="noopener noreferrer")
         for repo in matched_repo_names]
     
     # Randomize which dashboards are shown on top
