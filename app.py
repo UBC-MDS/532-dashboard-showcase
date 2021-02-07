@@ -1,6 +1,7 @@
 import json
 import random
 from collections import Counter
+from datetime import datetime
 
 import dash
 import dash_html_components as html
@@ -74,12 +75,12 @@ app.layout = dbc.Container([
         dbc.Row(id='thumbnails-row'),
         html.Br(),
         html.Hr(style={'width': '50%', 'margin-left': '0px'}),
-        html.P(['''
-        This app shows off the impressive dasboards created by students during a 4-week course in Dash for MDS DSCI-532 at UBC.
+        html.P([f'''
+        This app showcaes the impressive dasboards created during a 4-week course in Dash for MDS DSCI-532 at UBC.
         The displayed dashboards are filtered by the intersection (AND) of the selected tags.
         The count for each tag is updated when filtering to reflect only the visible dashboards.
-        This dashboard looks best in a full width window and ''',
-        html.A('the source can be found on GitHub.', href='https://github.com/UBC-MDS/532-dashboard-showcase')],
+        This dashboard looks best in a full width window and was last updated on {datetime.now().strftime('%b %d, %Y')}.''',
+        html.A(' The source can be found on GitHub.', href='https://github.com/UBC-MDS/532-dashboard-showcase')],
         style={'font-size': '14px', 'width': '50%', 'font-family': 'Ubuntu'})],
     style={'max-width': '95%'})
 
