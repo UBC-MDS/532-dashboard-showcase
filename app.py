@@ -14,10 +14,13 @@ from dash.dependencies import Input, Output
 with open('repos.json', 'r') as f:
     data=f.read()
 repos = json.loads(data)
+# Override a few gifs
+# Groups request
 repos['MDS_Winery_Dashboard']['image_url'] = 'https://media.giphy.com/media/YUCcfHOqLzdqb4DroP/giphy.gif'
+# Has multiple gifs
 repos['DSCI532-Group16-R']['image_url'] = 'https://raw.githubusercontent.com/UBC-MDS/DSCI532-Group16-R/main/images/app_showcase_demo_lo_res.gif'
+# Didn't commmit gif, just linked the one in the issue
 repos['Movie_Selection']['image_url'] = 'https://user-images.githubusercontent.com/4560057/107170262-bc3a6b00-6974-11eb-903c-50db6590bba5.gif'
-repos['dsci_532_group23']['image_url'] = 'https://user-images.githubusercontent.com/4560057/107170994-9b731500-6976-11eb-8de0-212232aacaa2.gif'
 
 flat_topic_list = [i for repo in repos for i in repos[repo]['topics']]
 topics_with_counts = dict(sorted(Counter(flat_topic_list).items(), key=lambda item: item[1], reverse=True))
