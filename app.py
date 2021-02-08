@@ -15,6 +15,8 @@ with open('repos.json', 'r') as f:
     data=f.read()
 repos = json.loads(data)
 repos['MDS_Winery_Dashboard']['image_url'] = 'https://media.giphy.com/media/YUCcfHOqLzdqb4DroP/giphy.gif'
+repos['DSCI532-Group16-R']['image_url'] = 'https://user-images.githubusercontent.com/4560057/107132313-99d02100-6892-11eb-81be-0c799b6f6d82.gif'
+
 
 flat_topic_list = [i for repo in repos for i in repos[repo]['topics']]
 topics_with_counts = dict(sorted(Counter(flat_topic_list).items(), key=lambda item: item[1], reverse=True))
