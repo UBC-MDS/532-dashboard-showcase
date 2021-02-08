@@ -73,7 +73,7 @@
     "dash_of_spice-R": {
         "description": "The Happy Navvy dashboard aims to provide an easy-to-use application to individuals and families looking to immigrate to a new country that best aligns with their values. The dashboard utilizes a user's key preferences to suggest countries that would provide maximum happiness if they immigrated there.",
         "homepage": "https://happy-navvy-r.herokuapp.com/",
-        "image_url": "https://raw.githubusercontent.com/UBC-MDS/dash_of_spice-R/main/gifception.gif",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/dash_of_spice-R/main/gifception2.gif",
         "topics": [
             "map",
             "dropdown",
@@ -178,9 +178,14 @@
     },
     "DSCI_532_Group13_Crime": {
         "description": "A Crime Statistics dashboard to visualise the trend of crime rates in America ",
-        "homepage": "",
+        "homepage": "https://crime-dashboard-group13.herokuapp.com",
         "image_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI_532_Group13_Crime/main/img/Graph_Sketch.png",
-        "topics": []
+        "topics": [
+            "treemap",
+            "python",
+            "crime-data",
+            "crime-analysis"
+        ]
     },
     "532_Dashboard_Project_Group_14": {
         "description": "This app allows users to explore key factors for employee attrition. Survey data can be filtered by gender, age, and department.",
