@@ -179,7 +179,7 @@
     "DSCI_532_Group13_Crime": {
         "description": "A Crime Statistics dashboard to visualise the trend of crime rates in America ",
         "homepage": "https://crime-dashboard-group13.herokuapp.com",
-        "image_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI_532_Group13_Crime/main/img/Graph_Sketch.png",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI_532_Group13_Crime/main/img/Screenshot 2021-02-08 at 7.38.34 AM.gif",
         "topics": [
             "treemap",
             "python",
@@ -291,7 +291,7 @@
     "532-Group21": {
         "description": "The app has a single main page with three visualizations that depend on the filters selected. Most importantly, the top left contains a filter which selects the statistic of interest and this is the main filter on which all of the visuals are built and includes life expectancy, child mortality, education ratio, population density and CO2 emissions.",
         "homepage": "https://dsci532-gapexpresser.herokuapp.com/",
-        "image_url": "https://raw.githubusercontent.com/UBC-MDS/532-Group21/main/imgs/AppSketch.png",
+        "image_url": "https://raw.githubusercontent.com/UBC-MDS/532-Group21/main/imgs/GapExpresser.gif",
         "topics": [
             "map",
             "slider",
