@@ -9,7 +9,7 @@ import pandas as pd
 print('\n'.join([str(x) for x in sorted(Path.cwd().parent.iterdir())]))
 
 # df = px.data.tips()
-df = pd.read_csv('../data/tips.csv')
+df = pd.read_csv('data/tips.csv')
 chart = (
     alt.Chart(df)
     .mark_circle(size=50)
