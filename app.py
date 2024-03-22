@@ -3,9 +3,7 @@ import random
 from collections import Counter
 from datetime import datetime
 
-import dash
-import dash_html_components as html
-import dash_core_components as dcc
+from dash import Dash, html, dcc
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
 
@@ -29,7 +27,7 @@ dropdown_options = [
     for topic in topics_with_counts]
 
 title = 'Dashboard Showcase'
-app = dash.Dash(
+app = Dash(
     __name__, title=title,
     external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server
@@ -37,7 +35,7 @@ server = app.server
 app.layout = dbc.Container([
         dbc.Row([
             dbc.Col([
-                dbc.Jumbotron([
+                html.Div([
                     html.P(
                         html.A('FiveThreeTwo', href='https://fivethirtyeight.com/', style={'color': 'white', 'text-decoration': 'none'}),
                         style={
