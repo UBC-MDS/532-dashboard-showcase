@@ -4,10 +4,12 @@ import dash_vega_components as dvc
 import plotly.express as px
 import json
 from pathlib import Path
+import pandas as pd
 
-print('\n'.join([str(x) for x in sorted(Path.cwd().iterdir())]))
+print('\n'.join([str(x) for x in sorted(Path.cwd().parent.iterdir())]))
 
-df = px.data.tips()
+# df = px.data.tips()
+df = pd.read_csv('../data/tips.csv')
 chart = (
     alt.Chart(df)
     .mark_circle(size=50)
