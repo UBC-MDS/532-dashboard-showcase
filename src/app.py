@@ -3,7 +3,9 @@ import altair as alt
 import dash_vega_components as dvc
 import plotly.express as px
 import json
+from pathlib import Path
 
+print('\n'.join([str(x) for x in sorted(Path.cwd().iterdir())]))
 
 df = px.data.tips()
 chart = (
