@@ -1,4 +1,11 @@
 pandas==2.*
+dash-vega-components
+altair
+vegafusion
+vl-convert-python
+altair_tiles
+plotly
+geopandas
 gunicorn
 pygithub
 dash
