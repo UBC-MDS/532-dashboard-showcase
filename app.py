@@ -52,7 +52,7 @@ app.layout = dbc.Container([
                         style={'text-align': 'center', 'color': 'white'}),
                     html.Hr(className="my-2", style={'background-color': 'white', 'width': '700px'}),
                     html.P(
-                        "Hover over a thumbnail to read more. Click it to try out the deployed app.",
+                        "Hover over a thumbnail to read more.",
                         className="lead",
                         style={'text-align': 'center', 'color': 'white', 'font-family': 'Ubuntu'}),
                 ],
@@ -78,7 +78,7 @@ app.layout = dbc.Container([
         html.Br(),
         html.Hr(style={'width': '50%', 'margin-left': '0px'}),
         html.P([f'''
-        This app showcaes the impressive dasboards created during a 4-week course in Dash for MDS DSCI-532 at UBC.
+        This app showcases the impressive dasboards created during a 4-week course in Dash for MDS DSCI-532 at UBC.
         The displayed dashboards are filtered by the intersection (AND) of the selected tags.
         The count for each tag is updated when filtering to reflect only the visible dashboards.
         This dashboard looks best in a full width window and was last updated on {datetime.now().strftime('%b %d, %Y')}.''',
@@ -122,7 +122,8 @@ def update_thumbnails(selected_topics):
                         className='text'),
                     className='overlay')],
                 className='container-hover'),
-            href=repos[repo]['homepage'], target="_blank", rel="noopener noreferrer")
+            # href=repos[repo]['homepage'], target="_blank", rel="noopener noreferrer"
+        )
         for repo in matched_repo_names]
     
     # Randomize which dashboards are shown on top
