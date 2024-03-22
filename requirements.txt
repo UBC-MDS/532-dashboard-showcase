@@ -1,6 +1,4 @@
-pandas
 gunicorn
 pygithub
-altair
-dash==1.18.1
+dash
 dash_bootstrap_components
