@@ -1,144 +1,141 @@
-import json
-import random
-from collections import Counter
-from datetime import datetime
+from dash import Dash, html, dcc, Input, Output, callback
+import pandas as pd
+import plotly.express as px
 
-from dash import Dash, html, dcc
-import dash_bootstrap_components as dbc
-from dash.dependencies import Input, Output
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+
+app = Dash(__name__, external_stylesheets=external_stylesheets)
+
+df = pd.read_csv('https://plotly.github.io/datasets/country_indicators.csv')
 
 
-# Load repo data
-with open('repos.json', 'r') as f:
-    data=f.read()
-repos = json.loads(data)
-# Override a few gifs
-# Groups request
-repos['MDS_Winery_Dashboard']['image_url'] = 'https://media.giphy.com/media/YUCcfHOqLzdqb4DroP/giphy.gif'
-# Has multiple gifs
-repos['DSCI532-Group16-R']['image_url'] = 'https://raw.githubusercontent.com/UBC-MDS/DSCI532-Group16-R/main/images/app_showcase_demo_lo_res.gif'
-# Didn't commmit gif, just linked the one in the issue
-repos['Movie_Selection']['image_url'] = 'https://user-images.githubusercontent.com/4560057/107170262-bc3a6b00-6974-11eb-903c-50db6590bba5.gif'
+app.layout = html.Div([
+    html.Div([
 
-flat_topic_list = [i for repo in repos for i in repos[repo]['topics']]
-topics_with_counts = dict(sorted(Counter(flat_topic_list).items(), key=lambda item: item[1], reverse=True))
-dropdown_options = [
-    {'label': f'{topic} ({str(topics_with_counts[topic])})', 'value': topic}
-    for topic in topics_with_counts]
+        html.Div([
+            dcc.Dropdown(
+                df['Indicator Name'].unique(),
+                'Fertility rate, total (births per woman)',
+                id='crossfilter-xaxis-column',
+            ),
+            dcc.RadioItems(
+                ['Linear', 'Log'],
+                'Linear',
+                id='crossfilter-xaxis-type',
+                labelStyle={'display': 'inline-block', 'marginTop': '5px'}
+            )
+        ],
+        style={'width': '49%', 'display': 'inline-block'}),
 
-title = 'Dashboard Showcase'
-app = Dash(
-    __name__, title=title,
-    external_stylesheets=[dbc.themes.BOOTSTRAP])
-server = app.server
+        html.Div([
+            dcc.Dropdown(
+                df['Indicator Name'].unique(),
+                'Life expectancy at birth, total (years)',
+                id='crossfilter-yaxis-column'
+            ),
+            dcc.RadioItems(
+                ['Linear', 'Log'],
+                'Linear',
+                id='crossfilter-yaxis-type',
+                labelStyle={'display': 'inline-block', 'marginTop': '5px'}
+            )
+        ], style={'width': '49%', 'float': 'right', 'display': 'inline-block'})
+    ], style={
+        'padding': '10px 5px'
+    }),
 
-app.layout = dbc.Container([
-        dbc.Row([
-            dbc.Col([
-                html.Div([
-                    html.P(
-                        html.A('FiveThreeTwo', href='https://fivethirtyeight.com/', style={'color': 'white', 'text-decoration': 'none'}),
-                        style={
-                            'text-align': 'center',
-                            'color': 'white',
-                            'font-family': 'Ubuntu Mono',
-                            'margin-bottom': '-15px',
-                            'margin-top': '-15px',
-                            'padding-top': '0px',
-                            'font-size': '34px'}),
-                    html.H1(
-                        title,
-                        className='display-2',
-                        style={'text-align': 'center', 'color': 'white'}),
-                    html.Hr(className="my-2", style={'background-color': 'white', 'width': '700px'}),
-                    html.P(
-                        "Hover over a thumbnail to read more.",
-                        className="lead",
-                        style={'text-align': 'center', 'color': 'white', 'font-family': 'Ubuntu'}),
-                ],
-                    style={'background-color': '#0d1d41',
-                        'font-family': 'Ubuntu',
-                        'width': '100vw',
-                        'margin-left': '-63px',
-                        'border-radius': '0px',
-                        'padding': '20px'})])]),
-        dbc.Row([
-            dbc.Col([
-                dcc.Dropdown(id='topic-dropdown', multi=True, options=dropdown_options,
-                    placeholder='Click here to select tags. The (#) is the count of dashboards.',
-                    style={
-                        'font-family': 'Ubuntu',
-                        'border-width': '0px',
-                        'box-shadow': '0px',
-                        'font-size': '18px'})],
-                md=4)],
-            justify='center'),
-        html.Br(),
-        dbc.Row(id='thumbnails-row'),
-        html.Br(),
-        html.Hr(style={'width': '50%', 'margin-left': '0px'}),
-        html.P([f'''
-        This app showcases the impressive dasboards created during a 4-week course in Dash for MDS DSCI-532 at UBC.
-        The displayed dashboards are filtered by the intersection (AND) of the selected tags.
-        The count for each tag is updated when filtering to reflect only the visible dashboards.
-        This dashboard looks best in a full width window and was last updated on {datetime.now().strftime('%b %d, %Y')}.''',
-        html.A(' The source can be found on GitHub.', href='https://github.com/UBC-MDS/532-dashboard-showcase')],
-        style={'font-size': '14px', 'width': '50%', 'font-family': 'Ubuntu'})],
-    style={'max-width': '95%'})
-
-@app.callback(
-    Output('thumbnails-row', 'children'),
-    Output('topic-dropdown', 'options'),
-    Input("topic-dropdown", "value"))
-def update_thumbnails(selected_topics):
-    if selected_topics:
-        # Return repos that match all selected topics 
-        matched_repo_names = [
-            repo for repo in repos
-                if all(topic in repos[repo]['topics'] for topic in selected_topics)]
-    else:
-        # Return all repos if no topics are selected
-        matched_repo_names = list(repos.keys())
-        
-    # Update dropdown dynamically to count tags in the visible dashboards only
-    flat_topic_list = [i for repo in repos for i in repos[repo]['topics'] if repo in matched_repo_names]
-    topics_with_counts = dict(sorted(Counter(flat_topic_list).items(), key=lambda item: item[1], reverse=True))
-    dropdown_options = [
-        {'label': f'{topic} ({str(topics_with_counts[topic])})', 'value': topic}
-        for topic in topics_with_counts]
-        
-    # Create one image thumbnail and one hover overlay per matched repo
-    images = [
-        html.A(
-            html.Div([
-                html.Img(
-                    src=repos[repo]['image_url'],
-                    alt=repos[repo]['homepage'],
-                    className='image'),
-                html.Div(
-                    html.Div([
-                        html.H3(repo, style={'font-family': 'Ubuntu'}),
-                        html.P(repos[repo]['description'], style={'font-size': '15px', 'font-family': 'Ubuntu'})],
-                        className='text'),
-                    className='overlay')],
-                className='container-hover'),
-            # href=repos[repo]['homepage'], target="_blank", rel="noopener noreferrer"
+    html.Div([
+        dcc.Graph(
+            id='crossfilter-indicator-scatter',
+            hoverData={'points': [{'customdata': 'Japan'}]}
         )
-        for repo in matched_repo_names]
-    
-    # Randomize which dashboards are shown on top
-    random.shuffle(images)
-    # Layout images in three columns
-    if len(images) == 1:
-        return [[dbc.Col(images[0]), dbc.Col([]), dbc.Col([])], dropdown_options]
-    if len(images) == 2:
-        return [[dbc.Col(images[0]), dbc.Col(images[1]), dbc.Col([])], dropdown_options] 
-    first_col_len = -(-len(images) // 3)  # Ceiling division
-    second_col_len = (len(images) - first_col_len) // 2
-    return [[dbc.Col(images[:first_col_len]),
-                dbc.Col(images[first_col_len:-second_col_len]),
-                dbc.Col(images[-second_col_len:])],
-            dropdown_options]
+    ], style={'width': '49%', 'display': 'inline-block', 'padding': '0 20'}),
+    html.Div([
+        dcc.Graph(id='x-time-series'),
+        dcc.Graph(id='y-time-series'),
+    ], style={'display': 'inline-block', 'width': '49%'}),
+
+    html.Div(dcc.Slider(
+        df['Year'].min(),
+        df['Year'].max(),
+        step=None,
+        id='crossfilter-year--slider',
+        value=df['Year'].max(),
+        marks={str(year): str(year) for year in df['Year'].unique()}
+    ), style={'width': '49%', 'padding': '0px 20px 20px 20px'})
+])
+server=app.server
+
+@callback(
+    Output('crossfilter-indicator-scatter', 'figure'),
+    Input('crossfilter-xaxis-column', 'value'),
+    Input('crossfilter-yaxis-column', 'value'),
+    Input('crossfilter-xaxis-type', 'value'),
+    Input('crossfilter-yaxis-type', 'value'),
+    Input('crossfilter-year--slider', 'value'))
+def update_graph(xaxis_column_name, yaxis_column_name,
+                 xaxis_type, yaxis_type,
+                 year_value):
+    dff = df[df['Year'] == year_value]
+
+    fig = px.scatter(x=dff[dff['Indicator Name'] == xaxis_column_name]['Value'],
+            y=dff[dff['Indicator Name'] == yaxis_column_name]['Value'],
+            hover_name=dff[dff['Indicator Name'] == yaxis_column_name]['Country Name']
+            )
+
+    fig.update_traces(customdata=dff[dff['Indicator Name'] == yaxis_column_name]['Country Name'])
+
+    fig.update_xaxes(title=xaxis_column_name, type='linear' if xaxis_type == 'Linear' else 'log')
+
+    fig.update_yaxes(title=yaxis_column_name, type='linear' if yaxis_type == 'Linear' else 'log')
+
+    fig.update_layout(margin={'l': 40, 'b': 40, 't': 10, 'r': 0}, hovermode='closest')
+
+    return fig
+
+
+def create_time_series(dff, axis_type, title):
+
+    fig = px.scatter(dff, x='Year', y='Value')
+
+    fig.update_traces(mode='lines+markers')
+
+    fig.update_xaxes(showgrid=False)
+
+    fig.update_yaxes(type='linear' if axis_type == 'Linear' else 'log')
+
+    fig.add_annotation(x=0, y=0.85, xanchor='left', yanchor='bottom',
+                       xref='paper', yref='paper', showarrow=False, align='left',
+                       text=title)
+
+    fig.update_layout(height=225, margin={'l': 20, 'b': 30, 'r': 10, 't': 10})
+
+    return fig
+
+
+@callback(
+    Output('x-time-series', 'figure'),
+    Input('crossfilter-indicator-scatter', 'hoverData'),
+    Input('crossfilter-xaxis-column', 'value'),
+    Input('crossfilter-xaxis-type', 'value'))
+def update_x_timeseries(hoverData, xaxis_column_name, axis_type):
+    country_name = hoverData['points'][0]['customdata']
+    dff = df[df['Country Name'] == country_name]
+    dff = dff[dff['Indicator Name'] == xaxis_column_name]
+    title = '<b>{}</b><br>{}'.format(country_name, xaxis_column_name)
+    return create_time_series(dff, axis_type, title)
+
+
+@callback(
+    Output('y-time-series', 'figure'),
+    Input('crossfilter-indicator-scatter', 'hoverData'),
+    Input('crossfilter-yaxis-column', 'value'),
+    Input('crossfilter-yaxis-type', 'value'))
+def update_y_timeseries(hoverData, yaxis_column_name, axis_type):
+    dff = df[df['Country Name'] == hoverData['points'][0]['customdata']]
+    dff = dff[dff['Indicator Name'] == yaxis_column_name]
+    return create_time_series(dff, axis_type, yaxis_column_name)
+
 
 if __name__ == '__main__':
-    app.run_server()
+    app.run(debug=True)
