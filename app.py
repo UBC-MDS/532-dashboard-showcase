@@ -78,7 +78,7 @@ app.layout = dbc.Container([
         html.Br(),
         html.Hr(style={'width': '50%', 'margin-left': '0px'}),
         html.P([f'''
-        This app showcases the impressive dasboards created during a 4-week course in Dash for MDS DSCI-532 at UBC.
+        This app showcases the impressive dashboards created during a 4-week course in Dash for MDS DSCI-532 at UBC.
         The displayed dashboards are filtered by the intersection (AND) of the selected tags.
         The count for each tag is updated when filtering to reflect only the visible dashboards.
         This dashboard looks best in a full width window and was last updated on {datetime.now().strftime('%b %d, %Y')}.''',
