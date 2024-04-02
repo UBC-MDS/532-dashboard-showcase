@@ -1,4 +1,3 @@
-gunicorn
-pygithub
-dash
-dash_bootstrap_components
+PyGithub==2.3.0
+dash==2.16.1
+dash-bootstrap-components==1.5.0
