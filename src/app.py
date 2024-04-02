@@ -9,7 +9,7 @@ from dash.dependencies import Input, Output
 
 
 # Load repo data
-with open('repos.json', 'r') as f:
+with open('data/repos.json', 'r') as f:
     data=f.read()
 repos = json.loads(data)
 # Override a few gifs
