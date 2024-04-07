@@ -85,40 +85,73 @@ app.layout = dbc.Container([
     Input("topic-dropdown", "value"))
 def update_thumbnails(selected_topics):
     if selected_topics:
-        # Return repos that match all selected topics 
+        # Return repos that match all selected topics
         matched_repo_names = [
             repo for repo in repos
                 if all(topic in repos[repo]['topics'] for topic in selected_topics)]
     else:
         # Return all repos if no topics are selected
         matched_repo_names = list(repos.keys())
-        
+
     # Update dropdown dynamically to count tags in the visible dashboards only
     flat_topic_list = [i for repo in repos for i in repos[repo]['topics'] if repo in matched_repo_names]
     topics_with_counts = dict(sorted(Counter(flat_topic_list).items(), key=lambda item: item[1], reverse=True))
     dropdown_options = [
         {'label': f'{topic} ({str(topics_with_counts[topic])})', 'value': topic}
         for topic in topics_with_counts]
-        
+
     # Create one image thumbnail and one hover overlay per matched repo
     images = [
-        html.A(
+        # html.A(
+        html.Div(
             html.Div([
                 html.Img(
-                    src=repos[repo]['image_url'],
-                    alt=repos[repo]['homepage'],
-                    className='image'),
+                    src=repos[repo]['demo_gif_url'],
+                    alt=repos[repo]['repo_url'],
+                    className='image'
+                ),
                 html.Div(
-                    html.Div([
-                        html.H3(repo, style={'font-family': 'Ubuntu'}),
-                        html.P(repos[repo]['description'], style={'font-size': '15px', 'font-family': 'Ubuntu'})],
-                        className='text'),
-                    className='overlay')],
-                className='container-hover'),
-            # href=repos[repo]['homepage'], target="_blank", rel="noopener noreferrer"
+                    html.Div(
+                        [
+                            html.H3(
+                                repo[14:].replace('_', '. ', 1).replace('_', ' ').replace('-', ' ').title(),
+                                style={'font-family': 'Ubuntu'}
+                            ),
+                            html.P(
+                                repos[repo]['description'],
+                                style={'font-size': '15px', 'font-family': 'Ubuntu'}
+                            ),
+                            html.A(
+                                html.P(
+                                    'Deployed app',
+                                    style={'font-size': '15px', 'font-family': 'Ubuntu', 'display': 'inline-block', 'color': 'white', 'text-decoration': 'underline'}
+                                ),
+                                href=repos[repo]['deploy_url'],
+                                target="_blank",
+                                rel="noopener noreferrer"
+                            ),
+                            html.A(
+                                html.P(
+                                    'GitHub repo',
+                                    style={'font-size': '15px', 'font-family': 'Ubuntu', 'display': 'inline-block', 'float': 'right', 'color': 'white', 'text-decoration': 'underline'}
+                                ),
+                                href=repos[repo]['repo_url'],
+                                target="_blank",
+                                rel="noopener noreferrer"
+                            ),
+                        ],
+                        className='text'
+                    ),
+                    className='overlay'
+                )
+            ]),
+            className='container-hover'
         )
-        for repo in matched_repo_names]
-    
+            # href=repos[repo]['deploy_url'], target="_blank", rel="noopener noreferrer"
+        # )
+        for repo in matched_repo_names
+    ]
+
     # Randomize which dashboards are shown on top
     random.shuffle(images)
     # Layout images in three columns
