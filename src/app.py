@@ -12,13 +12,6 @@ from dash.dependencies import Input, Output
 with open('data/repos.json', 'r') as f:
     data=f.read()
 repos = json.loads(data)
-# Override a few gifs
-# Groups request
-repos['MDS_Winery_Dashboard']['image_url'] = 'https://media.giphy.com/media/YUCcfHOqLzdqb4DroP/giphy.gif'
-# Has multiple gifs
-repos['DSCI532-Group16-R']['image_url'] = 'https://raw.githubusercontent.com/UBC-MDS/DSCI532-Group16-R/main/images/app_showcase_demo_lo_res.gif'
-# Didn't commmit gif, just linked the one in the issue
-repos['Movie_Selection']['image_url'] = 'https://user-images.githubusercontent.com/4560057/107170262-bc3a6b00-6974-11eb-903c-50db6590bba5.gif'
 
 flat_topic_list = [i for repo in repos for i in repos[repo]['topics']]
 topics_with_counts = dict(sorted(Counter(flat_topic_list).items(), key=lambda item: item[1], reverse=True))
@@ -52,7 +45,7 @@ app.layout = dbc.Container([
                         style={'text-align': 'center', 'color': 'white'}),
                     html.Hr(className="my-2", style={'background-color': 'white', 'width': '700px'}),
                     html.P(
-                        "Hover over a thumbnail to read more",
+                        "Hover over a thumbnail for details",
                         className="lead",
                         style={'text-align': 'center', 'color': 'white', 'font-family': 'Ubuntu'}),
                 ],
@@ -65,7 +58,7 @@ app.layout = dbc.Container([
         dbc.Row([
             dbc.Col([
                 dcc.Dropdown(id='topic-dropdown', multi=True, options=dropdown_options,
-                    placeholder='Click here to select tags. The (#) is the count of dashboards.',
+                    placeholder='Click here to select topics. The (#) is the count of dashboards.',
                     style={
                         'font-family': 'Ubuntu',
                         'border-width': '0px',
