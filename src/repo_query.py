@@ -39,49 +39,62 @@ def main():
         repo = g.get_repo('UBC-MDS/' + repo_name)
         repos[repo_name]['repo_url'] = f'https://github.com/UBC-MDS/{repo.name}'
         repos[repo_name]['description'] = repo.description
-        repos[repo_name]['homepage'] = repo.homepage
-        repos[repo_name]['image_url'] = find_img_path(repo)
+        repos[repo_name]['deploy_url'] = repo.homepage
+        repos[repo_name]['demo_gif_url'] = find_img_path(repo)
         repos[repo_name]['topics'] = clean_topics(repo.get_topics())
 
-    with open('repos.json', 'w+') as f:
+    with open('data/repos.json', 'w+') as f:
         json.dump(repos, f, indent=4)
- 
+
 
 def find_img_path(repo):
-    '''Find a gif or image, I should have standardized the naming for this...'''
+    '''Find a gif or image
+
+    Tries a standardizes location first and then searches the repo.
+    '''
     print(repo.name)
-    # Search the entire repo for a gif
-    contents = repo.get_contents('')
-    repo_files = []
-    while contents:
-        file_content = contents.pop(0)
-        if file_content.type == "dir":
-            contents.extend(repo.get_contents(file_content.path))
+    base_url = 'https://raw.githubusercontent.com/UBC-MDS/'
+    # import ipdb; ipdb.set_trace()
+    try:
+        gif_path = repo.get_contents('img/demo.gif').path
+        return f'{base_url}{repo.name}/{repo.default_branch}/{gif_path}'
+    # except github.GithubException.UnknownObjectException:
+    except github.GithubException:
+        print('No gif in standard location, looking elsewhere...')
+        # If no gif is found in the standardized location, then search the entire repo for a gif
+        contents = repo.get_contents('')
+        # import ipdb; ipdb.set_trace()
+        repo_files = []
+        while contents:
+            file_content = contents.pop(0)
+            if file_content.type == "dir":
+                contents.extend(repo.get_contents(file_content.path))
+            else:
+                repo_files.append(file_content.path)
+                pass
+        # If many gifs are found in the repo return the first one
+        gif_paths = [f for f in repo_files if Path(f.lower()).suffix == '.gif']
+        if gif_paths:
+            return f'{base_url}{repo.name}/{repo.default_branch}/{gif_paths[0]}'
         else:
-            repo_files.append(file_content.path)
-            pass
-    # If any gifs are found in the repo return the first one
-    gif_paths = [f for f in repo_files if Path(f.lower()).suffix == '.gif']
-    if gif_paths:
-        return f'https://raw.githubusercontent.com/UBC-MDS/{repo.name}/{repo.default_branch}/{gif_paths[0]}'
-        
-    # If no gifs are found search for an image instead.
-    # Since there might be unlreated images,
-    # guess which might be the dashboard image based on the directory.
-    for subdir in ['', 'img', 'imgs', 'images', 'image', 'assets', 'figures', 'doc', 'static/img', 'results/img', 'doc/images']:
-        try:
-            contents = repo.get_contents(subdir)
-            file_exts = [Path(x.path.lower()).suffix for x in contents]
-            for img_ext in ['.png', '.jpg']:
-                if img_ext in file_exts:
-                    # Gets the first index if there are multilple matches
-                    img_path = contents[file_exts.index(img_ext)].path 
-                    return f'https://raw.githubusercontent.com/UBC-MDS/{repo.name}/{repo.default_branch}/{img_path}'
-        except github.GithubException:
-            # Gracefuly skip when subdir is not found
-            pass
-    print('Could not find an image, returning a placeholder instead.')
-    return 'https://www.probytes.net/wp-content/uploads/2018/10/dash-logo-300.png'
+            print('No gifs found, looking for images instead...')
+            # If no gifs are found search for an image instead.
+            # Since there might be unlreated images,
+            # guess which might be the dashboard image based on the directory.
+            for subdir in ['', 'img', 'imgs', 'images', 'image', 'assets', 'figures', 'doc', 'static/img', 'results/img', 'doc/images']:
+                try:
+                    contents = repo.get_contents(subdir)
+                    file_exts = [Path(x.path.lower()).suffix for x in contents]
+                    for img_ext in ['.png', '.jpg']:
+                        if img_ext in file_exts:
+                            # Gets the first index if there are multilple matches
+                            img_path = contents[file_exts.index(img_ext)].path 
+                            return f'{base_url}{repo.name}/{repo.default_branch}/{img_path}'
+                except github.GithubException:
+                    # Gracefuly skip when subdir is not found
+                    pass
+            print('Could not find a gif or an image, returning a placeholder instead.')
+            return 'https://www.probytes.net/wp-content/uploads/2018/10/dash-logo-300.png'
 
 
 def clean_topics(topics):
