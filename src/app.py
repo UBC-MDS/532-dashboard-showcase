@@ -153,18 +153,20 @@ def update_thumbnails(selected_topics):
     ]
 
     # Randomize which dashboards are shown on top
-    random.shuffle(images)
+    # random.shuffle(images)
     # Layout images in three columns
     if len(images) == 1:
         return [[dbc.Col(images[0]), dbc.Col([]), dbc.Col([])], dropdown_options]
-    if len(images) == 2:
-        return [[dbc.Col(images[0]), dbc.Col(images[1]), dbc.Col([])], dropdown_options] 
-    first_col_len = -(-len(images) // 3)  # Ceiling division
-    second_col_len = (len(images) - first_col_len) // 2
-    return [[dbc.Col(images[:first_col_len]),
-                dbc.Col(images[first_col_len:-second_col_len]),
-                dbc.Col(images[-second_col_len:])],
-            dropdown_options]
+    elif len(images) == 2:
+        return [[dbc.Col(images[0]), dbc.Col(images[1]), dbc.Col([])], dropdown_options]
+    else:
+        images = images[::3] + images[1::3] + images[2::3]
+        first_col_len = -(-len(images) // 3)  # Ceiling division
+        second_col_len = (len(images) - first_col_len) // 2
+        return [[dbc.Col(images[:first_col_len]),
+                    dbc.Col(images[first_col_len:-second_col_len]),
+                    dbc.Col(images[-second_col_len:])],
+                dropdown_options]
 
 if __name__ == '__main__':
     app.run_server()
