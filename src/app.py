@@ -43,7 +43,6 @@ app.layout = dbc.Container([
                         title,
                         className='display-2',
                         style={'text-align': 'center', 'color': 'white'}),
-                    html.Hr(className="my-2", style={'background-color': 'white', 'width': '700px'}),
                     html.P(
                         "Hover over a thumbnail for details",
                         className="lead",

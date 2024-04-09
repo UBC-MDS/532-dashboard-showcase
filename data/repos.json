@@ -2,7 +2,7 @@
     "DSCI-532_2024_1_TBtracker": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2024_1_TBtracker",
         "description": "The Global Tuberculosis Tracker is a visualization tool for analyzing tuberculosis trends, offering year-by-year insights into incidence and mortality both worldwide and at the country level, as well as the risk factors associated with tuberculosis.",
-        "deploy_url": "",
+        "deploy_url": "https://dsci-532-2024-1-tbtracker.onrender.com/",
         "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2024_1_TBtracker/main/img/demo.gif",
         "topics": []
     },
@@ -47,7 +47,7 @@
     "DSCI-532_2024_5_HomeScope": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2024_5_HomeScope",
         "description": "HomeScope is a data analysis project aimed at providing stakeholders in the real estate industry with actionable insights derived from comprehensive analysis of key variables.",
-        "deploy_url": "https://dsci-532-2024-5-homescope-pr-43.onrender.com/",
+        "deploy_url": "https://dsci-532-2024-5-homescope.onrender.com",
         "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2024_5_HomeScope/main/img/demo.gif",
         "topics": [
             "dropdown",
@@ -222,7 +222,7 @@
     "DSCI-532_2024_20_hotspot": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2024_20_hotspot",
         "description": "Visualizing and understanding the dynamics between GHG emissions, global temperature change, and economic activity.",
-        "deploy_url": "",
+        "deploy_url": "https://hotspot-tracking-co2-emission-across-the.onrender.com/",
         "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2024_20_hotspot/main/img/demo.gif",
         "topics": [
             "dropdown",
