@@ -59,7 +59,7 @@
     "DSCI-532_2024_6_Green-Development-Planner": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2024_6_Green-Development-Planner",
         "description": "Assess the potential for green development funding in countries around the world",
-        "deploy_url": "https://dsci-532-2024-6-green-development-planner.onrender.com/",
+        "deploy_url": "https://dsci-532-2024-6-green-development-planner-v3i4.onrender.com/",
         "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2024_6_Green-Development-Planner/main/img/demo.gif",
         "topics": [
             "bar-chart",
@@ -71,7 +71,7 @@
     },
     "DSCI-532_2024_7_ds-compensation": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2024_7_ds-compensation",
-        "description": "Comparing compensation for jobs in data science field by verious factors",
+        "description": "Comparing compensation for jobs in data science field by various factors",
         "deploy_url": "https://dsci-532-2024-7-ds-compensation.onrender.com",
         "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2024_7_ds-compensation/main/img/demo.gif",
         "topics": [
@@ -110,14 +110,15 @@
         "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2024_10_vanweather/main/img/demo.gif",
         "topics": [
             "dropdown",
-            "slider",
-            "time-series"
+            "time-series",
+            "altair",
+            "daterange"
         ]
     },
     "DSCI-532_2024_11_spotify-popularity": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2024_11_spotify-popularity",
         "description": "This dashboard is designed for helping record companies to make data driven decisions, so that they can provide valuable and actionable suggestions that can be used as guidance for artists aiming to enhance their music's appeal.",
-        "deploy_url": "https://dsci-532-2024-11-spotify-popularity.onrender.com",
+        "deploy_url": "https://dsci-532-2024-11-spotify-popularity-3.onrender.com",
         "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2024_11_spotify-popularity/main/img/demo.gif",
         "topics": [
             "barplot",
@@ -139,7 +140,7 @@
     },
     "DSCI-532_2024_13_Juno": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2024_13_Juno",
-        "description": "This project scrutinizes the gender disparity in top-level leadership roles within Canadian corporations across multiple sectors. ",
+        "description": "A dashboarding project that scrutinizes the gender disparity in top-level leadership roles within Canadian corporations across multiple sectors. ",
         "deploy_url": "https://dsci-532-2024-13-juno-aa9o.onrender.com",
         "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2024_13_Juno/main/img/demo.gif",
         "topics": [
@@ -152,7 +153,7 @@
     "DSCI-532_2024_14_mds_saves_america": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2024_14_mds_saves_america",
         "description": "An interactive dashboard visualizing public sentiment and perceptions on American politics and the future of democracy, based on August 2018 survey data.",
-        "deploy_url": "https://dsci-532-2024-14-mds-saves-america-1.onrender.com/",
+        "deploy_url": "https://dsci-532-2024-14-mds-saves-america-10.onrender.com",
         "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2024_14_mds_saves_america/main/img/demo.gif",
         "topics": [
             "interactive-dashboard",
@@ -164,7 +165,7 @@
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2024_15_dreamhouse",
         "description": "A dashboard to help inform newcomers to the real-estate market explore the the markets of the 50 most populous cities in the US.",
         "deploy_url": "https://dsci-532-2024-15-dreamhouse.onrender.com/",
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2024_15_dreamhouse/main/img/Dreamhouse Demostration.gif",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2024_15_dreamhouse/main/img/demo.gif",
         "topics": [
             "housing-prices",
             "real-estate"
@@ -188,11 +189,11 @@
         "deploy_url": "https://dsci-532-2024-17-global-co2-emissions.onrender.com/",
         "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2024_17_Global-CO2-Emissions-Tracker/main/img/demo.gif",
         "topics": [
-            "co2-emissions",
             "dropdown",
             "map",
             "slider",
-            "interactive-dashboard"
+            "interactive-dashboard",
+            "checkbox"
         ]
     },
     "DSCI-532_2024_18_VancouverAirbnbPrices": {
@@ -208,7 +209,7 @@
     },
     "DSCI-532_2024_19_food-price-tracker": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2024_19_food-price-tracker",
-        "description": "The project aims to provide an intuitive, interactive data visualization platform for drawing food price insights and enhancing cross-sector collaboration to address worldwide food-related challenges.",
+        "description": "An intuitive, interactive data visualization platform for drawing food price insights and enhancing cross-sector collaboration to address worldwide food-related challenges.",
         "deploy_url": "https://dsci-532-2024-19-food-price-tracker.onrender.com",
         "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2024_19_food-price-tracker/main/img/demo.gif",
         "topics": [
