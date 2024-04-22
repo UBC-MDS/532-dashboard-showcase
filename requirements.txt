@@ -2,3 +2,6 @@ gunicorn==21.2.*
 PyGithub==2.3.*
 dash==2.16.*
 dash-bootstrap-components==1.5.*
+altair
+dash-vega-components
+vega_datasets
