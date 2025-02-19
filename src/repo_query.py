@@ -9,29 +9,43 @@ import github
 api_token = getpass('GitHub api token: ')
 g = github.Github(api_token)
 repos = defaultdict(dict)
+
+# Although we could regex search the beginning of the name,
+# it is quicker to just list the repos since the regex search requires looking for matches
+# in all repos  in the UBC-MDS organization.
+# To find all repos to add, make a search like this:
+# https://github.com/orgs/UBC-MDS/repositories?language=&q=DSCI-532_2025&sort=&type=all
 repo_names = [
-    'DSCI-532_2024_1_TBtracker',
-    'DSCI-532_2024_2_pollution-tracker',
-    'DSCI-532_2024_3_world-happiness-tracker',
-    'DSCI-532_2024_4_crime-tracker',
-    'DSCI-532_2024_5_HomeScope',
-    'DSCI-532_2024_6_Green-Development-Planner',
-    'DSCI-532_2024_7_ds-compensation',
-    'DSCI-532_2024_8_DriveDeepDive',
-    'DSCI-532_2024_9_solar-savers',
-    'DSCI-532_2024_10_vanweather',
-    'DSCI-532_2024_11_spotify-popularity',
-    'DSCI-532_2024_12_bigmac',
-    'DSCI-532_2024_13_Juno',
-    'DSCI-532_2024_14_mds_saves_america',
-    'DSCI-532_2024_15_dreamhouse',
-    'DSCI-532_2024_16_SilentEpidemic',
-    'DSCI-532_2024_17_Global-CO2-Emissions-Tracker',
-    'DSCI-532_2024_18_VancouverAirbnbPrices',
-    'DSCI-532_2024_19_food-price-tracker',
-    'DSCI-532_2024_20_hotspot',
-    'DSCI-532_2024_21_Job-Postings',
-    'DSCI-532_2024_22_flightfinder',
+    'DSCI-532_2025_1_cookie-dash',
+    'DSCI-532-2025-02-vanparks_finder',
+    'DSCI-532_2025_3_QuantaTrack',
+    'DSCI-532_2025_4_vdash',
+    'DSCI-532_2025_5_vessel-vision',
+    'DSCI-532_2025_06_pokemon-dashboard',
+    'DSCI-532_2025_7_amazon_marketing',
+    'DSCI-532_2025_8_rental-issue-tracker',
+    'DSCI-532_2025_9_RetaiLense',
+    'DSCI-532_2025_10_hong-kong-tracker',
+    'DSCI-532_2025_11_world_happiness',
+    'DSCI-532_2025_12_bank-marketing',
+    'DSCI-532_2025_13_Maple-Eagle-Trade-Tracker',
+    'DSCI-532_2025_14_CAN-US-Trade',
+    'DSCI-532_2025_15_RetailPulse',
+    'DSCI-532_2025_16_LongevityVisualizer',
+    'DSCI-532_2025_17_pharma_spend_dashboard',
+    'DSCI-532_2025_18_canadian-house-prices',
+    'DSCI-532-2025-19-DataSalaries',
+    'DSCI-532_2025_20_spotipy',
+    'DSCI-532_2025_21_DS_Salaries',
+    'DSCI-532_2025_22_nyc-arrest-tracker',
+    'DSCI-532_2025_23_AQI-Dashboard',
+    'DSCI-532_2025_24_police_killings',
+    'DSCI-532_2025_25_Ads-Analytics',
+    'DSCI-532_2025_26_SMBFinder',
+    'DSCI-532_2025_27_CA_Wildfire-Dashboard',
+    'DSCI-532_2025_28_commuting-insights',
+    'DSCI-532_2025_29_e-commerce-dashboard',
+    'DSCI-532_2025_30_road-accident-dashboard',
 ]
 
 def main():
