@@ -54,7 +54,6 @@ def find_img_path(repo):
     '''
     print(repo.name)
     base_url = 'https://raw.githubusercontent.com/UBC-MDS/'
-    # import ipdb; ipdb.set_trace()
     try:
         gif_path = repo.get_contents('img/demo.gif').path
         return f'{base_url}{repo.name}/{repo.default_branch}/{gif_path}'
@@ -63,7 +62,6 @@ def find_img_path(repo):
         print('No gif in standard location, looking elsewhere...')
         # If no gif is found in the standardized location, then search the entire repo for a gif
         contents = repo.get_contents('')
-        # import ipdb; ipdb.set_trace()
         repo_files = []
         while contents:
             file_content = contents.pop(0)
@@ -81,7 +79,7 @@ def find_img_path(repo):
             # If no gifs are found search for an image instead.
             # Since there might be unlreated images,
             # guess which might be the dashboard image based on the directory.
-            for subdir in ['', 'img', 'imgs', 'images', 'image', 'assets', 'figures', 'doc', 'static/img', 'results/img', 'doc/images']:
+            for subdir in ['', 'img', 'imgs', 'images', 'image', 'assets', 'figures', 'doc', 'static/img', 'results/img', 'doc/images', 'data/img', 'report/img']:
                 try:
                     contents = repo.get_contents(subdir)
                     file_exts = [Path(x.path.lower()).suffix for x in contents]
