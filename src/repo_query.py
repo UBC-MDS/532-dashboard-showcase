@@ -92,7 +92,7 @@ def find_img_path(repo):
                     # Gracefuly skip when subdir is not found
                     pass
             print('Could not find a gif or an image, returning a placeholder instead.')
-            return 'https://www.probytes.net/wp-content/uploads/2018/10/dash-logo-300.png'
+            return 'https://plotly.github.io/images/dash.png'
 
 
 def clean_topics(topics):
