@@ -1,215 +1,378 @@
 {
     "DSCI-532_2025_1_cookie-dash": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_1_cookie-dash",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_1_cookie-dash/main/img/sketch.png",
-        "topics": []
+        "description": "This interactive Dashboard empowers home bakers and culinary enthusiasts to filter and compare chocolate chip cookie recipes based on ingredient types, ratings, and complexity using dynamic visualizations.",
+        "deploy_url": "https://dsci-532-2025-1-cookie-dash.onrender.com/",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_1_cookie-dash/main/img/demo.gif",
+        "topics": [
+            "bar-chart",
+            "histogram",
+            "popup",
+            "slider",
+            "tooltip"
+        ]
     },
     "DSCI-532-2025-02-vanparks_finder": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532-2025-02-vanparks_finder",
-        "description": "This is a dashboard for finding parks in Vancouver, made using dash in Python.",
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532-2025-02-vanparks_finder/main/img/sketch.png",
-        "topics": []
+        "description": "Vanparks Finder is an interactive dashboard that helps Vancouver park enthusiasts discover parks based on their neighbourhood, special features, and facilities",
+        "deploy_url": "https://dsci-532-2025-02-vanparks-finder.onrender.com/",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532-2025-02-vanparks_finder/main/img/demo.gif",
+        "topics": [
+            "barplot",
+            "checkbox",
+            "dropdown-menu",
+            "map",
+            "popup-modal"
+        ]
     },
     "DSCI-532_2025_3_QuantaTrack": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_3_QuantaTrack",
         "description": "DSCI 532 Group 3 Project: QuantaTrack offers a dynamic, real-time dashboard for tracking the NASDAQ100, helping investors make data-driven decisions with ease.",
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_3_QuantaTrack/main/img/sketch.png",
-        "topics": []
+        "deploy_url": "https://dsci-532-2025-3-quantatrack.onrender.com/",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_3_QuantaTrack/main/img/demo.gif",
+        "topics": [
+            "nasdaq100",
+            "plotly",
+            "stock",
+            "button",
+            "dropdown"
+        ]
     },
     "DSCI-532_2025_4_vdash": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_4_vdash",
-        "description": "Welcome to VDash, a dashboard for car buyers and automotive enthusiasts to compare vehicles!",
-        "deploy_url": "",
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_4_vdash/main/img/sketch.png",
-        "topics": []
+        "description": "Welcome to VDash, an interactive dashboard that helps car buyers and professionals compare vehicles by performance, price, and key features with dynamic filters and visuals.",
+        "deploy_url": "https://vdash-n4be.onrender.com",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_4_vdash/main/img/demo.gif",
+        "topics": [
+            "bar-chart",
+            "boxplot",
+            "dropdown",
+            "scatterplot",
+            "slider"
+        ]
     },
     "DSCI-532_2025_5_vessel-vision": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_5_vessel-vision",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_5_vessel-vision/main/img/AIS_MAP.png",
-        "topics": []
+        "description": "For tracking vessel action, providing insights on such for the Pacific Northwest and the West Coast of North America.",
+        "deploy_url": "https://vessel-vision.onrender.com",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_5_vessel-vision/main/img/demo.gif",
+        "topics": [
+            "card-dropdown-map"
+        ]
     },
     "DSCI-532_2025_06_pokemon-dashboard": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_06_pokemon-dashboard",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_06_pokemon-dashboard/main/img/sketch.png",
-        "topics": []
+        "description": "Pok\u00e9dash is your personal Pok\u00e9guide to understand your lil pocket monster",
+        "deploy_url": "https://dsci-532-2025-06-pokemon-dashboard.onrender.com",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_06_pokemon-dashboard/main/img/demo.gif",
+        "topics": [
+            "barchart",
+            "boxplots",
+            "dropdown",
+            "scatterplot",
+            "slider"
+        ]
     },
     "DSCI-532_2025_7_amazon_marketing": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_7_amazon_marketing",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_7_amazon_marketing/main/img/sketch.png",
-        "topics": []
+        "description": "This app provides insights into user engagement, subscription renewal behavior, and content preferences among Amazon Prime users.",
+        "deploy_url": "https://dsci-532-2025-7-amazon-marketing.onrender.com/",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_7_amazon_marketing/main/img/demo.gif",
+        "topics": [
+            "bargraph",
+            "checkbox",
+            "numbers",
+            "slider",
+            "table"
+        ]
     },
     "DSCI-532_2025_8_rental-issue-tracker": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_8_rental-issue-tracker",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_8_rental-issue-tracker/main/img/sketch.png",
-        "topics": []
+        "description": "A dashboard application to track and visualize property details and by-law issues across the city of Vancouver, BC.",
+        "deploy_url": "https://dsci-532-2025-8-rental-issue-tracker.onrender.com/",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_8_rental-issue-tracker/main/img/demo.gif",
+        "topics": [
+            "bar-chart",
+            "dropdown",
+            "map",
+            "pie-chart",
+            "scatterplot"
+        ]
     },
     "DSCI-532_2025_9_RetaiLense": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_9_RetaiLense",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_9_RetaiLense/main/img/sketch.png",
-        "topics": []
+        "description": "RetaiLense is an interactive dashboard designed to monitor and optimize eCommerce sales across international markets for a UK-based online retail company.",
+        "deploy_url": "https://dsci-532-2025-9-retailense.onrender.com/",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_9_RetaiLense/main/img/demo.gif",
+        "topics": [
+            "interactive-visualizations",
+            "retail",
+            "ecommerce",
+            "dropdown"
+        ]
     },
     "DSCI-532_2025_10_hong-kong-tracker": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_10_hong-kong-tracker",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_10_hong-kong-tracker/main/img/sketch.png",
-        "topics": []
+        "description": "A data-driven dashboard visualizing passenger traffic trends in Hong Kong, with interactive filters, geospatial insights, and dynamic charts for enhanced analysis (refresh the website link if it does not open on the first attempt).",
+        "deploy_url": "https://five32-group-10.onrender.com",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_10_hong-kong-tracker/main/img/demo.gif",
+        "topics": [
+            "datepicker",
+            "dropdown",
+            "map",
+            "radiobutton",
+            "slider"
+        ]
     },
     "DSCI-532_2025_11_world_happiness": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_11_world_happiness",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_11_world_happiness/main/img/sketch.png",
-        "topics": []
+        "description": "An interactive dashboard that visualises global happiness data (2020-2024), allowing users to explore key factors affecting happiness by continent and country.",
+        "deploy_url": "https://dsci-532-2025-11-world-happiness-1.onrender.com/",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_11_world_happiness/main/img/demo.gif",
+        "topics": [
+            "happiness-index",
+            "interactive-dashboard",
+            "map",
+            "dropdown",
+            "lineplot",
+            "map",
+            "radar-chart"
+        ]
     },
     "DSCI-532_2025_12_bank-marketing": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_12_bank-marketing",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_12_bank-marketing/main/img/sketch.png",
-        "topics": []
+        "description": "Our Bank Marketing Dashboard helps financial institutions optimize their telemarketing strategies for term deposit subscriptions.",
+        "deploy_url": "https://dsci-532-2025-12-bank-marketing.onrender.com/",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_12_bank-marketing/main/img/bank_marketing.gif",
+        "topics": [
+            "altair",
+            "data",
+            "financial-dashboard",
+            "pandas",
+            "python",
+            "visualization"
+        ]
     },
     "DSCI-532_2025_13_Maple-Eagle-Trade-Tracker": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_13_Maple-Eagle-Trade-Tracker",
-        "description": "CAN US Trade Tracker ",
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_13_Maple-Eagle-Trade-Tracker/main/img/sketch.png",
-        "topics": []
+        "description": "Trade Tracker to understanding how the US tariffs will impact different Canadian businesses",
+        "deploy_url": "https://maple-eagle-trade-tracker.onrender.com/",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_13_Maple-Eagle-Trade-Tracker/main/img/demo.gif",
+        "topics": [
+            "dropdown",
+            "slider",
+            "map"
+        ]
     },
     "DSCI-532_2025_14_CAN-US-Trade": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_14_CAN-US-Trade",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_14_CAN-US-Trade/main/img/sketch.png",
-        "topics": []
+        "description": "An interactive dashboard summarising trade between Canada and the United States",
+        "deploy_url": "https://dsci-532-2025-14-can-us-trade.onrender.com",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_14_CAN-US-Trade/main/img/demo.gif",
+        "topics": [
+            "altair",
+            "dropdown",
+            "geopandas",
+            "map"
+        ]
     },
     "DSCI-532_2025_15_RetailPulse": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_15_RetailPulse",
         "description": "Captures the heartbeat of your retail performance. Shows you the pulse of revenue, customers, and products.",
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_15_RetailPulse/main/img/sketch.png",
-        "topics": []
+        "deploy_url": "https://dsci-532-2025-15-retailpulse-59yt.onrender.com",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_15_RetailPulse/main/img/Demo.gif",
+        "topics": [
+            "chlorpleth-maps",
+            "radio",
+            "slider",
+            "dropdown"
+        ]
     },
     "DSCI-532_2025_16_LongevityVisualizer": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_16_LongevityVisualizer",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_16_LongevityVisualizer/main/img/sketch.png",
-        "topics": []
+        "description": "Dashboard that allows visualization of important longevity metrics! ",
+        "deploy_url": "https://dsci-532-2025-16-longevityvisualizer.onrender.com",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_16_LongevityVisualizer/main/img/demo.gif",
+        "topics": [
+            "dropdown",
+            "line",
+            "map",
+            "slider",
+            "visualizations"
+        ]
     },
     "DSCI-532_2025_17_pharma_spend_dashboard": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_17_pharma_spend_dashboard",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_17_pharma_spend_dashboard/main/img/sketch.png",
-        "topics": []
+        "description": "Dashboard for visualization of pharmaceutical drug spending across the world.",
+        "deploy_url": "https://dsci-532-2025-17-pharma-spend-dashboard.onrender.com/",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_17_pharma_spend_dashboard/main/img/demo.gif",
+        "topics": [
+            "bargraph",
+            "choropleth-map",
+            "daterange",
+            "dropdown",
+            "timeseries"
+        ]
     },
     "DSCI-532_2025_18_canadian-house-prices": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_18_canadian-house-prices",
         "description": "Canadian House Prices For the Top  45 Cities",
-        "deploy_url": "",
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_18_canadian-house-prices/main/images/moq_up Dashboard.png",
-        "topics": []
+        "deploy_url": "https://canadian-house-prices.onrender.com/",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_18_canadian-house-prices/main/images/demo.gif",
+        "topics": [
+            "chart",
+            "cities",
+            "housing",
+            "map",
+            "summary"
+        ]
     },
     "DSCI-532-2025-19-DataSalaries": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532-2025-19-DataSalaries",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532-2025-19-DataSalaries/main/img/sketch.png",
-        "topics": []
+        "description": "Dashboard designed to provide salary trends and insights across various data-related roles.",
+        "deploy_url": "https://dsci-532-2025-19-datasalaries.onrender.com/",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532-2025-19-DataSalaries/main/img/demo.gif",
+        "topics": [
+            "bar-chart",
+            "buttons",
+            "donut-chart",
+            "lineplot",
+            "sidebar"
+        ]
     },
     "DSCI-532_2025_20_spotipy": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_20_spotipy",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_20_spotipy/main/img/sketch.png",
-        "topics": []
+        "description": "Dashboard with interactive plots and information about top Spotify songs from 2010 to 2019.",
+        "deploy_url": "https://dsci-532-2025-20-spotipy.onrender.com/",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_20_spotipy/main/img/demo.gif",
+        "topics": [
+            "dropdown",
+            "input-box",
+            "range-slider",
+            "scatterplot",
+            "slider",
+            "slider"
+        ]
     },
     "DSCI-532_2025_21_DS_Salaries": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_21_DS_Salaries",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_21_DS_Salaries/main/img/sketch.png",
-        "topics": []
+        "description": "An interactive dashboard to explore salary trends in data science across year, job titles, experience levels, company sizes, and locations",
+        "deploy_url": "https://dsci-532-2025-21-ds-salaries.onrender.com/",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_21_DS_Salaries/main/img/demo.gif",
+        "topics": [
+            "altair",
+            "barchart",
+            "dropdown",
+            "lineplot"
+        ]
     },
     "DSCI-532_2025_22_nyc-arrest-tracker": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_22_nyc-arrest-tracker",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_22_nyc-arrest-tracker/main/img/Sketch.png",
-        "topics": []
+        "description": "This dashboard visualizes arrest data from the New York Police Department.",
+        "deploy_url": "https://dsci-532-2025-22-nyc-arrest-tracker.onrender.com",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_22_nyc-arrest-tracker/main/img/demo.gif",
+        "topics": [
+            "button",
+            "dropdown",
+            "map",
+            "pie-chart",
+            "toggle"
+        ]
     },
     "DSCI-532_2025_23_AQI-Dashboard": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_23_AQI-Dashboard",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_23_AQI-Dashboard/main/img/sketch.png",
-        "topics": []
+        "description": "Air quality dashboard for 5 cities in India",
+        "deploy_url": "https://dsci-532-2025-23-aqi-dashboard.onrender.com/",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_23_AQI-Dashboard/main/img/demo.gif",
+        "topics": [
+            "barchart",
+            "datepicker",
+            "dropdown",
+            "infocard"
+        ]
     },
     "DSCI-532_2025_24_police_killings": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_24_police_killings",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_24_police_killings/main/img/sketch.png",
-        "topics": []
+        "description": "An interactive dashboard visualizing and analyzing police killings trends in 2015-16 with insights from race, age, location, and armed status using Altair and Dash.",
+        "deploy_url": "https://dsci-532-2025-24-police-killings.onrender.com/",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_24_police_killings/main/img/demo.gif",
+        "topics": [
+            "interactive-ui",
+            "map",
+            "police-killings-usa"
+        ]
     },
     "DSCI-532_2025_25_Ads-Analytics": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_25_Ads-Analytics",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_25_Ads-Analytics/main/img/sketch.png",
-        "topics": []
+        "description": "This dashboard helps advertisement companies identify the most promising Google Play Store apps for ad placements by analyzing app metrics such as user engagement and ratings.",
+        "deploy_url": "https://dsci-532-2025-25-ads-analytics.onrender.com",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_25_Ads-Analytics/main/img/demo.gif",
+        "topics": [
+            "chart",
+            "dropdown",
+            "filter",
+            "cards"
+        ]
     },
     "DSCI-532_2025_26_SMBFinder": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_26_SMBFinder",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_26_SMBFinder/main/img/sketch.png",
-        "topics": []
+        "description": "SMBFinder is a data-driven dashboard that helps entrepreneurs and microbusiness owners find the best locations to start their business in the U.S.",
+        "deploy_url": "https://dsci-532-2025-26-smbfinder.onrender.com/",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_26_SMBFinder/main/img/app_demo.gif",
+        "topics": [
+            "dropdown",
+            "geospatial-visualization",
+            "interactive-dashboard"
+        ]
     },
     "DSCI-532_2025_27_CA_Wildfire-Dashboard": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_27_CA_Wildfire-Dashboard",
         "description": "Dashboard to showcase some insights regarding California Wildfires",
-        "deploy_url": "",
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_27_CA_Wildfire-Dashboard/main/img/sketch.png",
+        "deploy_url": "https://dsci-532-2025-27-ca-wildfire-dashboard.onrender.com",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_27_CA_Wildfire-Dashboard/main/img/demo.gif",
         "topics": [
             "plotly",
-            "python3"
+            "dropdown",
+            "kpi",
+            "slider",
+            "widgets"
         ]
     },
     "DSCI-532_2025_28_commuting-insights": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_28_commuting-insights",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_28_commuting-insights/main/img/sketch.png",
-        "topics": []
+        "description": "Comprehensive dashboard that highlights commuting patterns across Canada through descriptive visualizations displaying the relationship between different means of transportation and commute times during different times of the day.",
+        "deploy_url": "https://dsci-532-2025-28-commuting-insights.onrender.com/",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_28_commuting-insights/main/img/demo.gif",
+        "topics": [
+            "choropleth-map",
+            "dropdown",
+            "scatterplot",
+            "slider",
+            "violin-plot"
+        ]
     },
     "DSCI-532_2025_29_e-commerce-dashboard": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_29_e-commerce-dashboard",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://plotly.github.io/images/dash.png",
-        "topics": []
+        "description": "A dashboard for an e-commerce merchant selling clothing items through Amazon.in",
+        "deploy_url": "https://dsci-532-2025-29-e-commerce-dashboard.onrender.com",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_29_e-commerce-dashboard/main/img/demo.gif",
+        "topics": [
+            "chart",
+            "datepickerrange",
+            "graph",
+            "map"
+        ]
     },
     "DSCI-532_2025_30_road-accident-dashboard": {
         "repo_url": "https://github.com/UBC-MDS/DSCI-532_2025_30_road-accident-dashboard",
-        "description": null,
-        "deploy_url": null,
-        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_30_road-accident-dashboard/main/img/app-sketch.png",
-        "topics": []
+        "description": "Canadian Road Accident Dashboard",
+        "deploy_url": "https://mds-2025-road-accident-dashboard.onrender.com",
+        "demo_gif_url": "https://raw.githubusercontent.com/UBC-MDS/DSCI-532_2025_30_road-accident-dashboard/main/img/demo.gif",
+        "topics": [
+            "altair",
+            "interactive-visualizations",
+            "responsive-web-design",
+            "user-filtering"
+        ]
     }
 }
